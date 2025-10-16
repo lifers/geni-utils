@@ -22,6 +22,3 @@ apt-get install openjdk-21-jdk sbt cloud-utils htop -y
 # Grow /dev/sda1 and resize file system to fill it
 growpart /dev/sda 1
 resize2fs /dev/sda1
-
-# Reboot
-reboot
