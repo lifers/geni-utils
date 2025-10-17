@@ -12,7 +12,6 @@ cd /local
     ./build/mvn -DskipTests clean package
 ) &
 (
-    cd datasets
     sudo git clone https://github.com/lifers/tpch-spark.git
     cd tpch-spark/dbgen
     sudo make
