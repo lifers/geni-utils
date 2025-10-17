@@ -13,14 +13,11 @@ cd /local
 ) &
 (
     cd datasets
-    git clone https://github.com/lifers/tpch-spark.git
+    sudo git clone https://github.com/lifers/tpch-spark.git
     cd tpch-spark/dbgen
-    make
+    sudo make
 
     # generate ~200GB dataset
-    ./dbgen -s 200
-
-    cd ..
-    sbt package
+    sudo ./dbgen -s 200
 ) &
 wait
